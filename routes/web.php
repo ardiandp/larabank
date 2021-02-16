@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +34,6 @@ Route::get('bank-export',[BankController::class, 'fileExport'])->name('bank-expo
 Route::get('siswa',[SiswaController::class, 'index'])->name('siswa');
 Route::post('siswa-import',[SiswaController::class, 'siswaImport'])->name('siswa-import');
 Route::get('siswa-export',[SiswaController::class, 'siswaExport'])->name('siswa-export');
+
+//admin
+Route::get('admin',[AdminController::class, 'index'])->name('admin');
