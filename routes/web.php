@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +28,7 @@ Route::get('file-export',  [UserController::class, 'fileExport'])->name('file-ex
 
 //import dan export bank
 Route::get('bank', [BankController::class, 'index'])->name('bank');
+Route::get('bank-upload',[BankController::class, 'upload'])->name('bank-upload');
 Route::post('bank-import',[BankController::class, 'fileImport'])->name('bank-import');
 Route::get('bank-export',[BankController::class, 'fileExport'])->name('bank-export');
 
@@ -37,3 +39,6 @@ Route::get('siswa-export',[SiswaController::class, 'siswaExport'])->name('siswa-
 
 //admin
 Route::get('admin',[AdminController::class, 'index'])->name('admin');
+
+//dashboard
+Route::get('dashboard',[DashboardController::class, 'index'])->name('dashboard');

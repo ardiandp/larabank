@@ -22,8 +22,9 @@ class BankImport implements ToModel
             'tanggal' => $row[0],
             'keterangan' => $row[1],
             'cabang' => $row[2],
-            'jumlah'=> $row[3],
-            'saldo'=> $row[4],
+            'jumlah' => $row[3],
+            'status'=> $row[4],
+            'saldo'=> $row[5],
 
         ]);
     }

@@ -17,7 +17,7 @@ class BankSeeder extends Seeder
     {
         //
         $faker = Faker::create('id_ID');
-        for ($i=1; $i<=10; $i++)
+        for ($i=1; $i<=20; $i++)
         {
 
         $bank = [
@@ -26,6 +26,7 @@ class BankSeeder extends Seeder
         	'tanggal'=> $faker->dateTimeThisCentury()->format('Y-m-d'),
        		'keterangan'=> $faker->name,
         	'cabang'=>  $faker->address,
+            'status'=> $faker->numberBetween(1,2),
         	'jumlah'=> $faker->numberBetween(100000,15000000),
        		'saldo'=> $faker->numberBetween(100000,15000000),
         	

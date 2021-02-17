@@ -19,6 +19,7 @@ class CreateBankTable extends Migration
             $table->text('keterangan');
             $table->string('cabang');
             $table->integer('jumlah');
+            $table->string('status');            
             $table->string('saldo');
             $table->timestamps();
         });
