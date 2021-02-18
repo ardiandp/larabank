@@ -6,6 +6,7 @@ use App\Http\Controllers\BankController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AkunController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,3 +43,9 @@ Route::get('admin',[AdminController::class, 'index'])->name('admin');
 
 //dashboard
 Route::get('dashboard',[DashboardController::class, 'index'])->name('dashboard');
+
+//akun
+Route::get('akun',[AkunController::class, 'index'])->name('akun');
+Route::post('akun-store',[AkunController::class, 'store'])->name('akun-store');
+Route::get('akun-destroy/{id}',[AkunController::class, 'destroy'])->name('akun-destroy/{id}');
+Route::post('akun-edit',[AkunController::class, 'edit'])->name('akun-edit');
