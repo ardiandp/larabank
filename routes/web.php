@@ -49,3 +49,7 @@ Route::get('akun',[AkunController::class, 'index'])->name('akun');
 Route::post('akun-store',[AkunController::class, 'store'])->name('akun-store');
 Route::get('akun-destroy/{id}',[AkunController::class, 'destroy'])->name('akun-destroy/{id}');
 Route::post('akun-edit',[AkunController::class, 'edit'])->name('akun-edit');
+
+//bank serverside
+Route::get('bank_server_side', [BankController::class, 'bank_server_side'])->name('bank_server_side');
+Route::get('bank_ssd', [BankController::class, 'bank_ssd'])->name('bank_ssd');

@@ -8,7 +8,8 @@ use App\Imports\BankImport;
 use App\Exports\BankExport;
 use App\Models\Bank;
 use Illuminate\Support\Facades\DB;
-
+use DataTables;
+use Carbon\Carbon;
 
 class BankController extends Controller
 {
@@ -36,5 +37,25 @@ class BankController extends Controller
     public function fileExport()
     {
     	return Excel::download(new bankExport, 'bank-collection.xlsx');
+    }
+
+    public function bank_server_side()
+    {
+        $data = Bank::latest()->get();
+        return DataTables::of($data)
+            ->editColumn("created_at", function ($data) {
+                return date("m/d/Y", strtotime($data->created_at));
+            })
+            ->addColumn('ID', function ($data) {
+                $update = '<a href="javascript:void(0)" class="btn btn-primary">' . $data->id . '</a>';
+                return $update;
+            })
+            ->rawColumns(['ID'])
+            ->make(true);
+    }
+
+    public function bank_ssd()
+    {
+        return view('bank/bank_ssd');
     }
 }
