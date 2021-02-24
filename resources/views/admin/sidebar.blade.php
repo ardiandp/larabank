@@ -25,7 +25,7 @@
                with font-awesome or any other icon font library -->
 
             <li class="nav-item">
-            <a href="/dashboard" class="nav-link">
+            <a href="{{ route('dashboard') }}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard               
@@ -44,13 +44,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/bank" class="nav-link">
+                <a href="{{ route('bank') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Record Transaksi</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/bank-upload" class="nav-link">
+                <a href="{{ route('bank-upload') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Import</p>
                 </a>
@@ -59,7 +59,7 @@
           </li>
 
             <li class="nav-item">
-            <a href="/akun" class="nav-link">
+            <a href="{{ route('akun') }}" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 AKUN
