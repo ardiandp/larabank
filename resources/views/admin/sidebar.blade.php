@@ -58,6 +58,47 @@
             </ul>
           </li>
 
+
+          <li class="nav-item has-treeview menu-close">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-address-book"></i>
+              <p>
+               MASTER
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href=" " class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>No Rekening</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href=" " class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Terapist</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href=" " class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Customer</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href=" " class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                TRANSFER
+                
+              </p>
+            </a>
+          </li>
+
             <li class="nav-item">
             <a href="{{ route('akun') }}" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
