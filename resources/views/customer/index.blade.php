@@ -134,19 +134,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
 @include ('admin/sidebar')
 
-  <!-- Content Wrapper. Contains page content -->
+
+ <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Transaksi</h1>
+            <h1>Data Customer</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Transaksi</li>
+              <li class="breadcrumb-item active">Data Customer</li>
             </ol>
           </div>
         </div>
@@ -159,42 +160,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable with minimal features & hover style</h3>
+               
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>Tanggal</th>
-                    <th>Keterangan</th>
-                    <th>Cabang</th>
-                    <th>Jumlah</th>
-                    <th>Status</th>
-                    <th>Saldo</th>
+                    <th>ID Customer</th>
+                    <th>Nama Customer</th>
+                    <th>No Handphone</th>
+                    <th>Alamat</th>
+                    <th>Aksi</th>                   
                   </tr>
                   </thead>
                   <tbody>                
-                 @foreach($bank as $p)
+                 @foreach($customer as $p)
                   <tr>
-                    <td>{{ $p->tanggal }}</td>
-                    <td>{{ $p->keterangan }}</td>
-                    <td>{{ $p->cabang }}</td>
-                    <td>{{ $p->jumlah }}</td>
-                    <td>{{ $p->status}}</td>
-                    <td>{{ $p->saldo }}</td>
+                    <td>{{ $p->idcustomer }}</td>
+                    <td>{{ $p->nama_customer }}</td>
+                    <td>{{ $p->no_hp }}</td>
+                    <td>{{ $p->alamat }}</td>
+                    <td></td>
+                   
                   </tr>
                  @endforeach
                  
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Tanggal</th>
-                    <th>Keterangan</th>
-                    <th>Cabang</th>
-                    <th>Jumlah</th>
-                    <th>Status</th>
-                    <th>Saldo</th>
+                   	<th>ID Customer</th>
+                    <th>Nama Customer</th>
+                    <th>No Handphone</th>
+                    <th>Alamat</th>
+                    <th>Aksi</th>       
                   </tr>
                   </tfoot>
                 </table>
@@ -215,8 +214,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.content-wrapper -->
   <!-- Control Sidebar -->
 
-  
-  <aside class="control-sidebar control-sidebar-dark">
+
+
+
+
+
+<aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
     <div class="p-3">
       <h5>Title</h5>

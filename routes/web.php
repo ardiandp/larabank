@@ -7,6 +7,9 @@ use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AkunController;
+use App\Http\Controllers\TerapistController;
+use App\Http\Controllers\RekeningController;
+use App\Http\Controllers\Customer;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,7 +58,10 @@ Route::get('bank_server_side', [BankController::class, 'bank_server_side'])->nam
 Route::get('bank_ssd', [BankController::class, 'bank_ssd'])->name('bank_ssd');
 
 // No rekening 
-
+Route::get('rekening',[RekeningController::class, 'index'])->name('rekening');
 // Customer
+Route::get('customer',[TerapistController::class, 'index'])->name('customer');
+
 
 // Terapist
+Route::get('terapist',[TerapistController::class, 'index'])->name('terapist');

@@ -17,7 +17,7 @@ class BankSeeder extends Seeder
     {
         //
         $faker = Faker::create('id_ID');
-        for ($i=1; $i<=200000; $i++)
+        for ($i=1; $i<=12; $i++)
         {
 
         $bank = [

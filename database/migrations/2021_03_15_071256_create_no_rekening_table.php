@@ -13,7 +13,7 @@ class CreateNoRekeningTable extends Migration
      */
     public function up()
     {
-        Schema::create('no_rekening', function (Blueprint $table) {
+        Schema::create('rekening', function (Blueprint $table) {
             $table->id();
             $table->string('atas_nama');
             $table->string('alias');

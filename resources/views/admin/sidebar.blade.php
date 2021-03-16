@@ -69,19 +69,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=" " class="nav-link">
+                <a href="{{ route('rekening') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>No Rekening</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=" " class="nav-link">
+                <a href="{{ route('terapist') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Terapist</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=" " class="nav-link">
+                <a href="{{ route('customer') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Customer</p>
                 </a>

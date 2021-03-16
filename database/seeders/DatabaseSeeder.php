@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         	BankSeeder::class,
             AkunSeeder::class,
             TerapistSeeder::class,
+            RekeningSeeder::class,
             CustomerSeeder::class,
 
         ]);
