@@ -1,0 +1,1 @@
+<meta content=”0; url=/public” http-equiv=”refresh”>

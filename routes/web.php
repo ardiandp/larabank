@@ -53,3 +53,9 @@ Route::post('akun-edit',[AkunController::class, 'edit'])->name('akun-edit');
 //bank serverside
 Route::get('bank_server_side', [BankController::class, 'bank_server_side'])->name('bank_server_side');
 Route::get('bank_ssd', [BankController::class, 'bank_ssd'])->name('bank_ssd');
+
+// No rekening 
+
+// Customer
+
+// Terapist
